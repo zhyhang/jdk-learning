@@ -7,12 +7,12 @@ public class StringReverse {
 			return s;
 		}
 		final int[] codePoints = s.codePoints().toArray();
-		for(int i=0,j=codePoints.length-1;i<codePoints.length/2;i++,j--){
+		for (int i = 0, j = codePoints.length - 1; i < codePoints.length / 2; i++, j--) {
 			int top = codePoints[j];
 			codePoints[j] = codePoints[i];
 			codePoints[i] = top;
 		}
-		return new String(codePoints,0,codePoints.length);
+		return new String(codePoints, 0, codePoints.length);
 	}
 
 	public static void main(String[] args) {
